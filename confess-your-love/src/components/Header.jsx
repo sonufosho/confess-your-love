@@ -1,0 +1,28 @@
+import { NavLink } from 'react-router';
+import './Header.css'
+
+function Header() {
+  return (
+    <>
+      <div className="header">
+        <div className="left-section">
+          <NavLink to="/">
+            <img className="home-icon" src="/images/home.gif" />
+          </NavLink>
+        </div>
+
+        <div className="right-section">
+          <NavLink to="/login">
+            <button className="login-button">Login</button>
+          </NavLink>
+
+          <NavLink to="/signup">
+            <button className="signup-button">Get started</button>
+          </NavLink>
+        </div>
+      </div>
+    </>
+  );
+}
+
+export default Header;

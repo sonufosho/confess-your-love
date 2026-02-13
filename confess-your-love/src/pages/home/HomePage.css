@@ -1,0 +1,78 @@
+.home-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  flex-direction: column;
+  text-align: center;
+}
+
+.animated-hearts {
+  width: 300px;;
+  margin-bottom: -8rem;
+}
+
+.title {
+  color: #fb6f92;
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.subtitle {
+  color: #ff8fab;
+  font-weight: bold;
+  font-size: 1.25rem;
+  margin-bottom: 2rem;
+}
+
+.confess-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.confess-button button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  color: white;
+  background-color: #ff8fab;
+  font-size: 1rem;
+  font-weight: bold;
+  border: 2px solid #ff8fab;
+  border-radius: 2rem;
+  padding: 0.25rem 2rem;
+
+  margin-top: 2rem;
+}
+
+.animated-mail {
+  width: 50px;
+}
+
+.footer {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+
+  color: #ff8fab;
+  font-weight: bold;
+  font-size: 0.75rem;
+  margin-top: 2rem;
+}
+
+.animated-flower {
+  width: 100px;
+}
+.animated-bee {
+  width: 100px;
+}
