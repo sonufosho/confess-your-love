@@ -1,4 +1,4 @@
-.signup-page {
+.login-page {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -29,7 +29,7 @@ h3 {
   color: #666;
 }
 
-.signup-page input {
+.login-page input {
   width: 300px;
   padding: 1rem;
   margin-bottom: 1rem;
@@ -40,18 +40,18 @@ h3 {
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-.signup-page input:focus {
+.login-page input:focus {
   color: #666;
   outline-color: #219ebc;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
-.signup-page input::placeholder {
+.login-page input::placeholder {
   color: #999;
   font-style: italic;
 }
 
-.auth-signup-button {
+.auth-login-button {
   font-size: 1rem;
   background-color: #9a8c98;
   color: white;
@@ -61,12 +61,12 @@ h3 {
   padding: 0.5rem 1rem;
 }
 
-
-.login {
+.signup {
   color: #666;
+  margin-bottom: -4.7rem;
 }
 
-.login-link {
+.signup-link {
   color: #a2d2ff;
   text-decoration: underline;
   margin-left: 0.3rem;

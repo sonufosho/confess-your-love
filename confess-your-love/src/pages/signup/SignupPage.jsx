@@ -9,8 +9,8 @@ function SignupPage() {
       <Header />
 
       <div className="signup-page">
-          <h1>Sign Up</h1>
-          <h3>Create your account to get started</h3>
+          <h1>Create Account</h1>
+          <h3>Sign up to get started</h3>
 
         <div className="input-container">
           <span>Full Name:</span>
@@ -35,6 +35,8 @@ function SignupPage() {
             placeholder="Enter your password"
           />
         </div>
+
+        <button className="auth-signup-button">Sign Up</button>
 
         <p className="login">Already have an account?
           <NavLink to="/login" className="login-link">
