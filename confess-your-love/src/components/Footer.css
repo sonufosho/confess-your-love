@@ -1,0 +1,17 @@
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  position: fixed;
+  bottom: 2rem;
+  right: 50%;
+  transform: translateX(50%);
+}
+
+.animated-flower {
+  width: 100px;
+}
+.animated-bee {
+  width: 100px;
+}

@@ -26,7 +26,7 @@
 }
 
 .subtitle {
-  color: #ff8fab;
+  color: #cdb4db;
   font-weight: bold;
   font-size: 1.25rem;
   margin-bottom: 2rem;
@@ -61,18 +61,11 @@
 .footer {
   width: 100%;
   display: flex;
-  justify-content: flex-start;
+  justify-content: center;
   align-items: center;
 
-  color: #ff8fab;
+  color: #a2d2ff;
   font-weight: bold;
   font-size: 0.75rem;
   margin-top: 2rem;
-}
-
-.animated-flower {
-  width: 100px;
-}
-.animated-bee {
-  width: 100px;
 }

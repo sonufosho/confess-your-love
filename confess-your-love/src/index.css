@@ -4,7 +4,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  font-family: Arial;
+  font-family: "Roboto", sans-serif;
 }
 
 button:hover {

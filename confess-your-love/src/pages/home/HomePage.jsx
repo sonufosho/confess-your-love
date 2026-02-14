@@ -17,14 +17,12 @@ function Homepage() {
             <p>No more awkward conversations. No more overthinking.</p>
             <div className="confess-button">
               <button>
-                Confess Now
+                Confess now
               <img className="animated-mail" src="/images/animated-mail.gif" />
               </button>
             </div>
           </div>
           <div className="footer">
-            <img className="animated-flower" src="images/animated-flower.gif"/>
-            <img className="animated-bee" src="images/animated-bee.gif"/>
             <p>Respectfully. Risk it.</p>
           </div>
         </div>
