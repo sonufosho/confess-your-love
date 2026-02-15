@@ -13,11 +13,11 @@ function Header() {
 
         <div className="right-section">
           <NavLink to="/login">
-            <button className="login-button">Login</button>
+            <button className="button-secondary">Login</button>
           </NavLink>
 
           <NavLink to="/signup">
-            <button className="signup-button">Get started</button>
+            <button className="button-primary">Get started</button>
           </NavLink>
         </div>
       </div>
