@@ -1,21 +1,23 @@
 .signup-page {
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
+  align-items: center;
+
   height: 100vh;
 }
 
-h1 {
-  color: #4a4e69;
-  font-size: 3rem;
-  margin-top: -1rem;
+.signup-title {
+  color: var(--night-bordeaux);
+  font-size: 40px;
+  font-weight: 600;
+  margin-bottom: 4px;
 }
 
-h3 {
-  color: #9a8c98;
-  margin-top: -1rem;
-  margin-bottom: 2rem;
+.signup-subtitle {
+  color: var(--dark-amaranth);
+  font-weight: 500;
+  margin-bottom: 40px;
 }
 
 .input-container {
@@ -23,51 +25,23 @@ h3 {
   flex-direction: column;
   align-items: flex-start;
   justify-content: center;
+
+  margin-bottom: 8px;
 }
 
-.input-container span {
-  color: #666;
+.signup-label {
+  margin-bottom: 4px;
 }
 
-.signup-page input {
-  width: 300px;
-  padding: 0.75rem 1rem;
-  margin-bottom: 1rem;
-
-  font-size: 1rem;
-  border: 3px solid #a2d2ff;
-  border-radius: 1rem;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+.signup-button {
+  margin-top: 8px;
+  margin-bottom: 20px;
 }
 
-.signup-page input:focus {
-  color: #666;
-  outline-color: #219ebc;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-}
-
-.signup-page input::placeholder {
-  color: #999;
-  font-style: italic;
-}
-
-.auth-signup-button {
-  font-size: 1rem;
-  background-color: #9a8c98;
-  color: white;
-  font-weight: bold;
-  border: 2px solid #22223b;
-  border-radius: 5rem;
-  padding: 0.5rem 1rem;
-}
-
-
-.login {
-  color: #666;
+.login-text {
+  color: var(--dim-grey);
 }
 
 .login-link {
-  color: #a2d2ff;
-  text-decoration: underline;
-  margin-left: 0.3rem;
+  margin-left: 4px;
 }

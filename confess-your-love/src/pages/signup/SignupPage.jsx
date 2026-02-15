@@ -9,11 +9,11 @@ function SignupPage() {
       <Header />
 
       <div className="signup-page">
-          <h1>Create Account</h1>
-          <h3>Sign up to get started</h3>
+        <p className="signup-title">Create Account</p>
+        <p className="signup-subtitle">Sign up to get started</p>
 
         <div className="input-container">
-          <span>Full Name:</span>
+          <label className="signup-label">Full name</label>
           <input
             type="text"
             placeholder="James Bond"
@@ -21,7 +21,7 @@ function SignupPage() {
         </div>
 
         <div className="input-container">
-          <span>Username:</span>
+          <label label className="signup-label">Username:</label>
           <input
             type="text"
             placeholder="james_bond"
@@ -29,17 +29,17 @@ function SignupPage() {
         </div>
 
         <div className="input-container">
-          <span>Password:</span>
+          <label label className="signup-label">Password:</label>
           <input
             type="text"
             placeholder="Enter your password"
           />
         </div>
 
-        <button className="auth-signup-button">Sign Up</button>
+        <button className="button-primary signup-button">Sign Up</button>
 
-        <p className="login">Already have an account?
-          <NavLink to="/login" className="login-link">
+        <p className="login-text">Already have an account?
+          <NavLink to="/login" className="link-primary login-link">
             Log in
           </NavLink>
         </p>
