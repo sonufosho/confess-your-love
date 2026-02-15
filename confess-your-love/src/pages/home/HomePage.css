@@ -1,38 +1,45 @@
 .home-page {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
 }
 
-.container {
+.title-container {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
 
-  flex-direction: column;
   text-align: center;
 }
 
 .animated-hearts {
-  width: 300px;;
-  margin-bottom: -8rem;
+  width: 360px;
+  margin-top: 20px;
 }
 
-.title {
-  color: #fb6f92;
-  font-size: 2.5rem;
-  font-weight: bold;
-  margin-bottom: 1rem;
+.home-title {
+  color: var(--night-bordeaux);
+  font-size: 40px;
+  font-weight: 800;
+  margin-bottom: 4px;
+  margin-top: -60px;
 }
 
-.subtitle {
-  color: #cdb4db;
-  font-weight: bold;
-  font-size: 1.25rem;
-  margin-bottom: 2rem;
+.home-subtitle {
+  color: var(--dark-amaranth);
+  font-weight: 500;
+  margin-bottom: 4px;
 }
 
-.confess-button {
+.home-subtitle-2 {
+  color: var(--dark-amaranth);
+  font-weight: 500;
+  margin-bottom: 100px;
+}
+
+.button-container {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -40,34 +47,19 @@
   text-decoration: none;
 }
 
-.confess-button button {
+.confess-button {
   display: flex;
   justify-content: center;
   align-items: center;
-
-  color: white;
-  background-color: #ff8fab;
-  font-size: 1rem;
-  font-weight: bold;
-  border: 2px solid #ff8fab;
-  border-radius: 2rem;
-  padding: 0.25rem 2rem;
-
-  margin-top: 2rem;
 }
 
 .animated-mail {
-  width: 50px;
+  width: 40px;
 }
 
-.footer {
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-
-  color: #a2d2ff;
-  font-weight: bold;
-  font-size: 0.75rem;
-  margin-top: 2rem;
+.footer-text {
+  color: var(--twitter-blue);
+  font-size: 14px;
+  font-weight: 400;
+  margin-top: 100px;
 }

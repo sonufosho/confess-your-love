@@ -8,25 +8,22 @@ function Homepage() {
       <Header />
 
       <div className="home-page">
-        <div className="container">
-          <div className="title">
-            <img className="animated-hearts" src="images/animated-hearts.gif"/>
-            <p>Got a crush on someone?</p>
-          </div>
-          <div className="subtitle">
-            <p>Confess your feelings</p>
-            <p>No more awkward conversations. No more overthinking.</p>
-            <NavLink to="/profile" className="confess-button">
-              <button>
-                Confess now
-              <img className="animated-mail" src="/images/animated-mail.gif" />
-              </button>
-            </NavLink>
-          </div>
-          <div className="footer">
-            <p>Respectfully. Risk it.</p>
-          </div>
+        <div className="title-container">
+          <img className="animated-hearts" src="images/animated-hearts.gif" />
+          <p className="home-title">Got a crush on someone?</p>
         </div>
+
+          <p className="home-subtitle">Confess your feelings</p>
+          <p className="home-subtitle-2">No more awkward conversations. No more overthinking.</p>
+
+          <NavLink to="/profile" className="button-container">
+            <button className="button-primary confess-button">
+              Confess now
+              <img className="animated-mail" src="/images/animated-mail.gif" />
+            </button>
+          </NavLink>
+
+          <p className="footer-text">Respectfully. Risk it.</p>
       </div>
     </>
   );
