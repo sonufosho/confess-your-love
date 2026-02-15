@@ -1,12 +1,132 @@
-body {
-  margin: 0;
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-family: "Roboto", sans-serif;
+:root {
+  --black: #000000ff;
+  --carbon-black: #1c1c1cff;
+  --graphite: #393939ff;
+  --charcoal: #555555ff;
+  --dim-grey: #717171ff;
+  --grey-olive: #8e8e8eff;
+  --silver: #aaaaaaff;
+  --silver-2: #c6c6c6ff;
+  --alabaster-grey: #e3e3e3ff;
+  --white: #ffffffff;
 }
 
-button:hover {
+:root {
+--alice-blue: #e3f2fdff;
+--icy-blue: #bbdefbff;
+--sky-blue: #90caf9ff;
+--cool-sky: #64b5f6ff;
+--cool-sky-2: #42a5f5ff;
+--dodger-blue: #2196f3ff;
+--brilliant-azure: #1e88e5ff;
+--twitter-blue: #1976d2ff;
+--ocean-deep: #1565c0ff;
+--cobalt-blue: #0d47a1ff;
+}
+
+body {
+  font-family: Roboto, sans-serif;
+  color: var(--graphite);
+  margin: 0;
+}
+
+p {
+  margin: 0;
+}
+
+input,
+select,
+button,
+textarea {
+  font-family: Roboto, sans-serif;
+  background-color: var(--white);
+  font-size: 14px;
+  padding: 10px 12px;
+  border-radius: 8px;
+  border: 2px solid var(--silver-2);
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+  outline-color: var(--dim-grey);
+  box-shadow: 0 0 0 2px rgba(17, 24, 39, 0.1);
+}
+
+label {
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--graphite);
+}
+
+button {
+  font-size: 14px;
+  font-weight: 500;
   cursor: pointer;
+}
+
+.button-primary {
+  color: var(--white);
+  background-color: var(--graphite);
+  padding: 10px 12px;
+  border: none;
+  box-shadow: 0 2px 5px rgba(220, 220, 220, 0.5);
+}
+
+.button-primary:hover {
+  background-color: var(--charcoal);
+  border: none;
+}
+
+.button-primary:active {
+  background: var(--dim-grey);
+  box-shadow: none;
+}
+
+.button-secondary {
+  color: var(--graphite);
+  background: var(--white);
+  font-weight: 800;
+  padding: 7.5px 9.5px;
+  border: 3px solid var(--graphite);
+  cursor: pointer;
+  box-shadow: 0 2px 5px rgba(220, 220, 220, 0.2);
+}
+
+.button-secondary:hover {
+  background-color: var(--alabaster-grey);
+}
+
+.button-secondary:active {
+  background-color: var(--silver-2);
+}
+
+.link-primary {
+  color: var(--twitter-blue);
+  cursor: pointer;
+}
+
+.link-primary:hover {
+  opacity: 0.75;
+}
+
+.link-primary:active {
+  opacity: 0.5;
+}
+
+select {
+  color: var(--graphite);
+  border: 1px solid var(--silver-2);
+  cursor: pointer;
+  box-shadow: 0 1px 3px rgba(200, 200, 200, 0.2);
+}
+
+textarea {
+  resize: none;
+}
+
+input[type="file"]::file-selector-button {
+  background-color: transparent;
+  color: var(--graphite);
+  border: none;
 }

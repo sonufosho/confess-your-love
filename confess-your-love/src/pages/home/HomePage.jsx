@@ -1,3 +1,4 @@
+import { NavLink } from 'react-router'
 import Header from '../../components/Header'
 import './HomePage.css'
 
@@ -15,12 +16,12 @@ function Homepage() {
           <div className="subtitle">
             <p>Confess your feelings</p>
             <p>No more awkward conversations. No more overthinking.</p>
-            <div className="confess-button">
+            <NavLink to="/profile" className="confess-button">
               <button>
                 Confess now
               <img className="animated-mail" src="/images/animated-mail.gif" />
               </button>
-            </div>
+            </NavLink>
           </div>
           <div className="footer">
             <p>Respectfully. Risk it.</p>
