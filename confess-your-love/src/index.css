@@ -12,21 +12,35 @@
 }
 
 :root {
---alice-blue: #e3f2fdff;
---icy-blue: #bbdefbff;
---sky-blue: #90caf9ff;
---cool-sky: #64b5f6ff;
---cool-sky-2: #42a5f5ff;
---dodger-blue: #2196f3ff;
---brilliant-azure: #1e88e5ff;
---twitter-blue: #1976d2ff;
---ocean-deep: #1565c0ff;
---cobalt-blue: #0d47a1ff;
+  --alice-blue: #e3f2fdff;
+  --icy-blue: #bbdefbff;
+  --sky-blue: #90caf9ff;
+  --cool-sky: #64b5f6ff;
+  --cool-sky-2: #42a5f5ff;
+  --dodger-blue: #2196f3ff;
+  --brilliant-azure: #1e88e5ff;
+  --twitter-blue: #1976d2ff;
+  --ocean-deep: #1565c0ff;
+  --cobalt-blue: #0d47a1ff;
+}
+
+:root {
+  --night-bordeaux: #590d22ff;
+  --dark-amaranth: #800f2fff;
+  --cherry-rose: #a4133cff;
+  --rosewood: #c9184aff;
+  --bubblegum-pink: #ff4d6dff;
+  --bubblegum-pink-2: #ff758fff;
+  --cotton-candy: #ff8fa3ff;
+  --cherry-blossom: #ffb3c1ff;
+  --pastel-pink: #ffccd5ff;
+  --lavender-blush: #fff0f3ff;
 }
 
 body {
-  font-family: Roboto, sans-serif;
-  color: var(--graphite);
+  font-family: "Roboto", sans-serif;
+  color: var(--cherry-rose);
+  background-color: var(--lavender-blush);
   margin: 0;
 }
 
@@ -38,7 +52,8 @@ input,
 select,
 button,
 textarea {
-  font-family: Roboto, sans-serif;
+  font-family: "Roboto", sans-serif;
+  color: var(--graphite);
   background-color: var(--white);
   font-size: 14px;
   padding: 10px 12px;
@@ -49,14 +64,14 @@ textarea {
 input:focus,
 select:focus,
 textarea:focus {
-  outline-color: var(--dim-grey);
+  outline-color: var(--cotton-candy);
   box-shadow: 0 0 0 2px rgba(17, 24, 39, 0.1);
 }
 
 label {
   font-size: 14px;
   font-weight: 500;
-  color: var(--graphite);
+  color: var(--cherry-rose);
 }
 
 button {
@@ -67,38 +82,38 @@ button {
 
 .button-primary {
   color: var(--white);
-  background-color: var(--graphite);
+  background-color: var(--cherry-rose);
   padding: 10px 12px;
   border: none;
   box-shadow: 0 2px 5px rgba(220, 220, 220, 0.5);
 }
 
 .button-primary:hover {
-  background-color: var(--charcoal);
+  background-color: var(--rosewood);
   border: none;
 }
 
 .button-primary:active {
-  background: var(--dim-grey);
+  background: var(--bubblegum-pink);
   box-shadow: none;
 }
 
 .button-secondary {
-  color: var(--graphite);
+  color: var(--cherry-rose);
   background: var(--white);
   font-weight: 800;
   padding: 7.5px 9.5px;
-  border: 3px solid var(--graphite);
+  border: 3px solid var(--cherry-rose);
   cursor: pointer;
   box-shadow: 0 2px 5px rgba(220, 220, 220, 0.2);
 }
 
 .button-secondary:hover {
-  background-color: var(--alabaster-grey);
+  background-color: var(--lavender-blush);
 }
 
 .button-secondary:active {
-  background-color: var(--silver-2);
+  background-color: var(--pastel-pink);
 }
 
 .link-primary {
@@ -116,7 +131,6 @@ button {
 
 select {
   color: var(--graphite);
-  border: 1px solid var(--silver-2);
   cursor: pointer;
   box-shadow: 0 1px 3px rgba(200, 200, 200, 0.2);
 }
@@ -127,6 +141,6 @@ textarea {
 
 input[type="file"]::file-selector-button {
   background-color: transparent;
-  color: var(--graphite);
+  color: var(--cherry-rose);
   border: none;
 }
