@@ -38,7 +38,8 @@ function SignupPage() {
 
         <button className="button-primary signup-button">Sign Up</button>
 
-        <p className="login-text">Already have an account?
+        <p className="login-text">
+          Already have an account?
           <NavLink to="/login" className="link-primary login-link">
             Log in
           </NavLink>

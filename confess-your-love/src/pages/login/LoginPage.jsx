@@ -9,11 +9,11 @@ function LoginPage() {
       <Header />
 
       <div className="login-page">
-          <h1>Welcome back</h1>
-          <h3>Login to access your account</h3>
+        <p className="login-title">Welcome Back</p>
+        <p className="login-subtitle">Login to access your account</p>
 
         <div className="input-container">
-          <span>Username:</span>
+          <label label className="login-label">Username:</label>
           <input
             type="text"
             placeholder="james_bond"
@@ -21,17 +21,18 @@ function LoginPage() {
         </div>
 
         <div className="input-container">
-          <span>Password:</span>
+          <label label className="login-label">Password:</label>
           <input
             type="text"
             placeholder="Enter your password"
           />
         </div>
 
-        <button className="auth-login-button">Login</button>
+        <button className="button-primary login-button">Sign Up</button>
 
-        <p className="signup">Don't have an account?
-          <NavLink to="/signup" className="signup-link">
+        <p className="login-text">
+          Don't have an account?
+          <NavLink to="/signup" className="link-primary login-link">
             Create account
           </NavLink>
         </p>

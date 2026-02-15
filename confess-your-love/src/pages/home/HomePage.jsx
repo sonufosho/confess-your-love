@@ -13,17 +13,17 @@ function Homepage() {
           <p className="home-title">Got a crush on someone?</p>
         </div>
 
-          <p className="home-subtitle">Confess your feelings</p>
-          <p className="home-subtitle-2">No more awkward conversations. No more overthinking.</p>
+        <p className="home-subtitle">Confess your feelings</p>
+        <p className="home-subtitle-2">No more awkward conversations. No more overthinking.</p>
 
-          <NavLink to="/profile" className="button-container">
-            <button className="button-primary confess-button">
-              Confess now
-              <img className="animated-mail" src="/images/animated-mail.gif" />
-            </button>
-          </NavLink>
+        <NavLink to="/profile" className="button-container">
+          <button className="button-primary confess-button">
+            Confess now
+            <img className="animated-mail" src="/images/animated-mail.gif" />
+          </button>
+        </NavLink>
 
-          <p className="footer-text">Respectfully. Risk it.</p>
+        <p className="footer-text">Respectfully. Risk it.</p>
       </div>
     </>
   );

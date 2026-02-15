@@ -1,21 +1,23 @@
 .login-page {
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
+  align-items: center;
+
   height: 100vh;
 }
 
-h1 {
-  color: #4a4e69;
-  font-size: 3rem;
-  margin-top: -1rem;
+.login-title {
+  color: var(--night-bordeaux);
+  font-size: 40px;
+  font-weight: 600;
+  margin-bottom: 4px;
 }
 
-h3 {
-  color: #9a8c98;
-  margin-top: -1rem;
-  margin-bottom: 2rem;
+.login-subtitle {
+  color: var(--dark-amaranth);
+  font-weight: 500;
+  margin-bottom: 40px;
 }
 
 .input-container {
@@ -23,51 +25,23 @@ h3 {
   flex-direction: column;
   align-items: flex-start;
   justify-content: center;
+
+  margin-bottom: 8px;
 }
 
-.input-container span {
-  color: #666;
+.login-label {
+  margin-bottom: 4px;
 }
 
-.login-page input {
-  width: 300px;
-  padding: 0.75rem 1rem;
-  margin-bottom: 1rem;
-
-  font-size: 1rem;
-  border: 3px solid #a2d2ff;
-  border-radius: 1rem;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+.login-button {
+  margin-top: 8px;
+  margin-bottom: 20px;
 }
 
-.login-page input:focus {
-  color: #666;
-  outline-color: #219ebc;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-}
-
-.login-page input::placeholder {
-  color: #999;
-  font-style: italic;
-}
-
-.auth-login-button {
-  font-size: 1rem;
-  background-color: #9a8c98;
-  color: white;
-  font-weight: bold;
-  border: 2px solid #22223b;
-  border-radius: 5rem;
-  padding: 0.5rem 1rem;
-}
-
-.signup {
-  color: #666;
-  margin-bottom: -4.2rem;
+.signup-text {
+  color: var(--dim-grey);
 }
 
 .signup-link {
-  color: #a2d2ff;
-  text-decoration: underline;
-  margin-left: 0.3rem;
+  margin-left: 4px;
 }

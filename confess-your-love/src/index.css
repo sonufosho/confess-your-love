@@ -142,4 +142,5 @@ input[type="file"]::file-selector-button {
   background-color: transparent;
   color: var(--cherry-rose);
   border: none;
+  cursor: pointer;
 }
