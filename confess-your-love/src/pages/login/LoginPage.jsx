@@ -28,7 +28,7 @@ function LoginPage() {
           />
         </div>
 
-        <button className="button-primary login-button">Sign Up</button>
+        <button className="button-primary login-button">Log in</button>
 
         <p className="login-text">
           Don't have an account?
