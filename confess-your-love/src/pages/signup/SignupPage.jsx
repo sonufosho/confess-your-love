@@ -21,7 +21,7 @@ function SignupPage() {
         </div>
 
         <div className="input-container">
-          <label label className="signup-label">Username:</label>
+          <label label className="signup-label">Username</label>
           <input
             type="text"
             placeholder="james_bond"
@@ -29,10 +29,18 @@ function SignupPage() {
         </div>
 
         <div className="input-container">
-          <label label className="signup-label">Password:</label>
+          <label label className="signup-label">Email</label>
+          <input
+            type="email"
+            placeholder="jamesbond@gmail.com"
+          />
+        </div>
+
+        <div className="input-container">
+          <label label className="signup-label">Password</label>
           <input
             type="text"
-            placeholder="Enter your password"
+            placeholder="Create a password"
           />
         </div>
 

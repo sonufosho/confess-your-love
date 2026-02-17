@@ -13,7 +13,7 @@ function LoginPage() {
         <p className="login-subtitle">Login to access your account</p>
 
         <div className="input-container">
-          <label label className="login-label">Username:</label>
+          <label label className="login-label">Username</label>
           <input
             type="text"
             placeholder="james_bond"
@@ -21,7 +21,7 @@ function LoginPage() {
         </div>
 
         <div className="input-container">
-          <label label className="login-label">Password:</label>
+          <label label className="login-label">Password</label>
           <input
             type="text"
             placeholder="Enter your password"
