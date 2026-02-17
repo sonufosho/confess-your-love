@@ -35,16 +35,11 @@
   flex-direction: column;
   justify-content: center;
 
-  margin-bottom: 8px;
-}
-
-.hobby-group {
-  display: flex;
-  flex-direction: row;
-  gap: 12px;
-  margin-bottom: 6px;
+  width: 240px;
+  margin-bottom: 12px;
 }
 
 .save-button {
   margin-top: 12px;
+  margin-bottom: 40px;
 }
