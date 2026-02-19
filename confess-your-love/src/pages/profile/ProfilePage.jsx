@@ -22,7 +22,7 @@ function ProfilePage() {
         </div>
 
         <div className="form-group">
-          <label className="profile-label">Relationship Type</label>
+          <label className="profile-label">Relationship type</label>
           <select name="be-my" required>
             <option value="">Choose your relationship</option>
             <option value="Girlfriend">Girlfriend</option>

@@ -22,19 +22,14 @@
 .home-title {
   color: var(--night-bordeaux);
   font-size: 40px;
-  font-weight: 800;
-  margin-bottom: 12px;
-  margin-top: -60px;
+  font-weight: 600;
+  margin-bottom: 8px;
+  margin-top: -100px;
 }
 
 .home-subtitle {
   color: var(--dark-amaranth);
-  font-weight: 500;
-  margin-bottom: 4px;
-}
-
-.home-subtitle-2 {
-  color: var(--dark-amaranth);
+  font-size: 20px;
   font-weight: 500;
   margin-bottom: 80px;
 }
@@ -54,12 +49,12 @@
 }
 
 .animated-mail {
-  width: 40px;
+  width: 30px;
 }
 
 .footer-text {
   color: var(--twitter-blue);
   font-size: 14px;
   font-weight: 400;
-  margin-top: 100px;
+  margin-top: 160px;
 }

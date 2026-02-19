@@ -14,7 +14,6 @@ function Homepage() {
         </div>
 
         <p className="home-subtitle">Confess your feelings</p>
-        <p className="home-subtitle-2">No more awkward conversations. No more overthinking.</p>
 
         <NavLink to="/profile" className="button-container">
           <button className="button-primary confess-button">
