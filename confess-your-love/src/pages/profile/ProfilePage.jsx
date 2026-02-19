@@ -1,13 +1,30 @@
+import axios from 'axios';
+import { useState, useEffect } from 'react';
+import { useParams } from 'react-router';
 import Header from '../../components/Header';
 import './ProfilePage.css';
 
 function ProfilePage() {
+  const { username } = useParams();
+  const [user, setUser] = useState();
+
+  useEffect(() => {
+    const loadProfile = async () => {
+      const response = await axios.get(`http://localhost:3000/api/user/${username}`, { withCredentials: true });
+      setUser(response.data);
+    }
+
+    loadProfile();
+  }, [username]);
+
+  if (!user) return null;
+
   return (
     <>
       < Header />
 
       <div className="profile-page">
-        <p className="profile-title">Hi, {'Sonu'}</p>
+        <p className="profile-title">Hi, {user.fullName}</p>
         <p className="profile-subtitle"> This information will be used to personalize your experience.</p>
         <p className="profile-subtitle-2">Fill the details below</p>
 

@@ -7,10 +7,10 @@ import "./SignupPage.css";
 
 function SignupPage() {
   const [userCredentials, setUserCredentials] = useState({
-    fullName: "",
-    username: "",
-    email: "",
-    password: ""
+    fullName: '',
+    username: '',
+    email: '',
+    password: ''
   });
   const [isLoading, setIsLoading] = useState(false);
   const navigate = useNavigate();
@@ -27,7 +27,7 @@ function SignupPage() {
     setIsLoading(true);
 
     try {
-      const response = await axios.post('https://confess-your-love-backend.vercel.app/api/auth/register', userCredentials);
+      const response = await axios.post('http://localhost:3000/api/auth/register', userCredentials, { withCredentials: true });
       const username = response.data.username;
       
       navigate(`/${username}`);

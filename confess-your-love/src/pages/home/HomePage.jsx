@@ -15,7 +15,7 @@ function Homepage() {
 
         <p className="home-subtitle">Confess your feelings</p>
 
-        <NavLink to="/profile" className="button-container">
+        <NavLink to="/username" className="button-container">
           <button className="button-primary confess-button">
             Confess now
             <img className="animated-mail" src="/images/animated-mail.gif" />
