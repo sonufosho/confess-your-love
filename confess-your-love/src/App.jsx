@@ -1,3 +1,4 @@
+import { useEffect } from 'react'
 import { Routes, Route, Navigate } from 'react-router'
 import useAuthStore from './store/useAuthStore'
 import HomePage from './pages/home/HomePage'
@@ -5,14 +6,13 @@ import SignupPage from './pages/signup/SignupPage'
 import LoginPage from './pages/login/LoginPage'
 import ProfilePage from './pages/profile/ProfilePage'
 import './App.css'
-import { useEffect } from 'react'
 
 function App() {
   const { authUser, authStatus } = useAuthStore();
 
   useEffect(() => {
     authStatus();
-  }, [authUser]);
+  }, []);
 
   return (
     <Routes>

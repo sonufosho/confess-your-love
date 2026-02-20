@@ -1,4 +1,5 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
+import { useNavigate } from 'react-router';
 import { NavLink } from "react-router";
 import useAuthStore from '../../store/useAuthStore';
 import Header from "../../components/Header";
@@ -12,7 +13,14 @@ function SignupPage() {
     email: '',
     password: ''
   });
-  const { signup, isSigningUp } = useAuthStore();
+  const { signup, isSigningUp, authUser } = useAuthStore();
+  const navigate = useNavigate();
+
+  useEffect(() => {
+    if (authUser && authUser.username) {
+      navigate(`/${authUser.username}`);
+    }
+  }, [authUser, navigate]);
 
   return (
     <>

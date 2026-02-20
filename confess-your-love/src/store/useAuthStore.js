@@ -5,6 +5,7 @@ const useAuthStore = create((set) => ({
   authUser: null,
   isCheckingAuth: true,
   isSigningUp: false,
+  isLoggingIn: false,
 
   authStatus: async () => {
     try {
@@ -32,6 +33,21 @@ const useAuthStore = create((set) => ({
 
     } finally {
       set({ isSigningUp: false });
+    }
+  },
+
+  login: async (userCredentials) => {
+    set({ isLoggingIn: true });
+
+    try {
+      const response = await axios.post('http://localhost:3000/api/auth/login', userCredentials, { withCredentials: true });
+      set({ authUser: response.data });
+
+    } catch (error) {
+      console.log('Error in login:', error);
+
+    } finally {
+      set({ isLoggingIn: false });
     }
   }
 }));
