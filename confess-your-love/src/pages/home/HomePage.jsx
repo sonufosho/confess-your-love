@@ -1,8 +1,11 @@
 import { NavLink } from 'react-router'
+import useAuthStore from '../../store/useAuthStore';
 import Header from '../../components/Header'
 import './HomePage.css'
 
 function Homepage() {
+  const { authUser } = useAuthStore();
+
   return (
     <>
       <Header />
@@ -15,7 +18,7 @@ function Homepage() {
 
         <p className="home-subtitle">Confess your feelings</p>
 
-        <NavLink to="/username" className="button-container">
+        <NavLink to={authUser ? `/${authUser.username}` : "/username"} className="button-container">
           <button className="button-primary confess-button">
             Confess now
             <img className="animated-mail" src="/images/animated-mail.gif" />

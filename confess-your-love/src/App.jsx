@@ -1,18 +1,25 @@
-import { Routes, Route } from 'react-router'
+import { Routes, Route, Navigate } from 'react-router'
+import useAuthStore from './store/useAuthStore'
 import HomePage from './pages/home/HomePage'
 import SignupPage from './pages/signup/SignupPage'
 import LoginPage from './pages/login/LoginPage'
-import './App.css'
 import ProfilePage from './pages/profile/ProfilePage'
+import './App.css'
+import { useEffect } from 'react'
 
 function App() {
+  const { authUser, authStatus } = useAuthStore();
+
+  useEffect(() => {
+    authStatus();
+  }, [authUser]);
 
   return (
     <Routes>
       <Route index element={<HomePage />} />
-      <Route path="/signup" element={<SignupPage />} />
-      <Route path="/login" element={<LoginPage />} />
-      <Route path="/:username" element={<ProfilePage />} />
+      <Route path="/signup" element={authUser ? <Navigate to="/:username" /> : <SignupPage />} />
+      <Route path="/login" element={authUser ? <Navigate to="/:username" /> : <LoginPage />} />
+      <Route path="/:username" element={authUser ? <ProfilePage /> : <Navigate to="/login" />} />
     </Routes>
   )
 }
