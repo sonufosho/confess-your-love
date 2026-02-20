@@ -1,44 +1,18 @@
-import axios from 'axios';
 import { useState } from 'react';
-import { NavLink, useNavigate } from "react-router";
+import { NavLink } from "react-router";
+import useAuthStore from '../../store/useAuthStore';
 import Header from "../../components/Header";
 import Footer from "../../components/Footer";
 import "./SignupPage.css";
 
 function SignupPage() {
-  const [userCredentials, setUserCredentials] = useState({
+  const [formData, setFormData] = useState({
     fullName: '',
     username: '',
     email: '',
     password: ''
   });
-  const [isLoading, setIsLoading] = useState(false);
-  const navigate = useNavigate();
-
-  const handleInputChange = (field) => (e) => {
-    setUserCredentials({ ...userCredentials, [field]: e.target.value });
-  };
-
-  const signupUser = async () => {
-    if (!userCredentials.fullName || !userCredentials.username || !userCredentials.email || !userCredentials.password) {
-      return;
-    }
-
-    setIsLoading(true);
-
-    try {
-      const response = await axios.post('http://localhost:3000/api/auth/register', userCredentials, { withCredentials: true });
-      const username = response.data.username;
-      
-      navigate(`/${username}`);
-
-    } catch (err) {
-      console.error("Signup error:", err);
-
-    } finally {
-      setIsLoading(false);
-    }
-  };
+  const { signup, isSigningUp } = useAuthStore();
 
   return (
     <>
@@ -51,8 +25,8 @@ function SignupPage() {
         <div className="input-container">
           <label className="signup-label">Full name</label>
           <input
-            value={userCredentials.fullName}
-            onChange={handleInputChange('fullName')}
+            value={formData.fullName}
+            onChange={(e) => setFormData({ ...formData, fullName: e.target.value })}
             type="text"
             placeholder="James Bond"
           />
@@ -61,8 +35,8 @@ function SignupPage() {
         <div className="input-container">
           <label className="signup-label">Username</label>
           <input
-            value={userCredentials.username}
-            onChange={handleInputChange('username')}
+            value={formData.username}
+            onChange={(e) => setFormData({ ...formData, username: e.target.value })}
             type="text"
             placeholder="james_bond"
           />
@@ -71,8 +45,8 @@ function SignupPage() {
         <div className="input-container">
           <label className="signup-label">Email</label>
           <input
-            value={userCredentials.email}
-            onChange={handleInputChange('email')}
+            value={formData.email}
+            onChange={(e) => setFormData({ ...formData, email: e.target.value })}
             type="email"
             placeholder="jamesbond@gmail.com"
           />
@@ -81,19 +55,19 @@ function SignupPage() {
         <div className="input-container">
           <label className="signup-label">Password</label>
           <input
-            value={userCredentials.password}
-            onChange={handleInputChange('password')}
+            value={formData.password}
+            onChange={(e) => setFormData({ ...formData, password: e.target.value })}
             type="password"
             placeholder="Create a password"
           />
         </div>
 
         <button
-          onClick={signupUser}
-          disabled={isLoading}
+          onClick={() => signup(formData)}
+          disabled={isSigningUp}
           className="button-primary signup-button"
         >
-          {isLoading ? "Signing up..." : "Sign up"}
+          {isSigningUp ? "Signing up..." : "Sign up"}
         </button>
 
         <p className="login-text">

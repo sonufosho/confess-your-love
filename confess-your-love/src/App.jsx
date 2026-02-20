@@ -17,8 +17,8 @@ function App() {
   return (
     <Routes>
       <Route index element={<HomePage />} />
-      <Route path="/signup" element={authUser ? <Navigate to="/:username" /> : <SignupPage />} />
-      <Route path="/login" element={authUser ? <Navigate to="/:username" /> : <LoginPage />} />
+      <Route path="/signup" element={<SignupPage />} />
+      <Route path="/login" element={<LoginPage />} />
       <Route path="/:username" element={authUser ? <ProfilePage /> : <Navigate to="/login" />} />
     </Routes>
   )
