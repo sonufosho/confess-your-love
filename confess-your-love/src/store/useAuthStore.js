@@ -1,6 +1,8 @@
 import axios from 'axios';
 import { create } from 'zustand';
 
+const API_URL = import.meta.env.VITE_API_URL;
+
 const useAuthStore = create((set) => ({
   authUser: null,
   isCheckingAuth: true,
@@ -9,7 +11,7 @@ const useAuthStore = create((set) => ({
 
   authStatus: async () => {
     try {
-      const response = await axios.get('http://localhost:3000/api/auth/status', { withCredentials: true });
+      const response = await axios.get(`${API_URL}/api/auth/status`, { withCredentials: true });
       set({ authUser: response.data });
 
     } catch (error) {
@@ -25,7 +27,7 @@ const useAuthStore = create((set) => ({
     set({ isSigningUp: true });
 
     try {
-      const response = await axios.post('http://localhost:3000/api/auth/register', userCredentials, { withCredentials: true });
+      const response = await axios.post(`${API_URL}/api/auth/register`, userCredentials, { withCredentials: true });
       set({ authUser: response.data });
 
     } catch (error) {
@@ -40,7 +42,7 @@ const useAuthStore = create((set) => ({
     set({ isLoggingIn: true });
 
     try {
-      const response = await axios.post('http://localhost:3000/api/auth/login', userCredentials, { withCredentials: true });
+      const response = await axios.post(`${API_URL}/api/auth/login`, userCredentials, { withCredentials: true });
       set({ authUser: response.data });
 
     } catch (error) {
@@ -53,7 +55,7 @@ const useAuthStore = create((set) => ({
 
   logout: async () => {
     try {
-      await axios.post('http://localhost:3000/api/auth/logout', {}, { withCredentials: true });
+      await axios.post(`${API_URL}/api/auth/logout`, {}, { withCredentials: true });
       set({ authUser: null });
 
     } catch (error) {
