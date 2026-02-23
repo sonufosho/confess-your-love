@@ -4,7 +4,7 @@ import './Header.css'
 
 function Header() {
   const location = useLocation();
-  const { authUser } = useAuthStore();
+  const { authUser, logout } = useAuthStore();
 
   return (
     <>
@@ -32,7 +32,9 @@ function Header() {
           {authUser && (
             <>
               <p className="greet-text">Hi, {authUser.fullName}</p>
-              <button className="logout-button"><i className="ri-logout-box-r-line"></i></button>
+              <button className="logout-button"
+                onClick={() => logout()}
+              ><i className="ri-logout-box-r-line"></i></button>
             </>
           )}
         </div>
