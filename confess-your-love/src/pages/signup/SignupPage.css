@@ -8,14 +8,14 @@
 }
 
 .signup-title {
-  color: var(--night-bordeaux);
+  color: var(--cherry-rose);
   font-size: 40px;
   font-weight: 600;
   margin-bottom: 4px;
 }
 
 .signup-subtitle {
-  color: var(--dark-amaranth);
+  color: var(--rosewood);
   font-weight: 500;
   margin-bottom: 40px;
 }
@@ -44,4 +44,18 @@
 
 .login-link {
   margin-left: 4px;
+}
+
+@media (max-width: 500px) {
+  .signup-title {
+    margin-top: -100px;
+  }
+
+  .signup-subtitle {
+    margin-bottom: 40px;
+  }
+
+  .login-text {
+    margin-top: 20px;
+  }
 }

@@ -4,17 +4,18 @@
   align-items: center;
 
   min-height: 100vh;
+  text-align: center;
 }
 
 .profile-subtitle {
-  color: var(--dark-amaranth);
+  color: var(--rosewood);
   font-weight: 500;
   margin-top: 100px;
   margin-bottom: 4px;
 }
 
 .profile-subtitle-2 {
-  color: var(--dark-amaranth);
+  color: var(--rosewood);
   font-weight: 500;
   margin-bottom: 20px;
 }
@@ -30,6 +31,7 @@
 
   width: 240px;
   margin-bottom: 12px;
+  text-align: start;
 }
 
 .save-button {

@@ -1,6 +1,7 @@
 import { NavLink } from 'react-router'
 import useAuthStore from '../../store/useAuthStore';
 import Header from '../../components/Header'
+import Footer from '../../components/Footer';
 import './HomePage.css'
 
 function Homepage() {
@@ -27,6 +28,8 @@ function Homepage() {
 
         <p className="footer-text">Respectfully. Risk it.</p>
       </div>
+
+      <Footer />
     </>
   );
 }

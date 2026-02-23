@@ -19,7 +19,7 @@
 }
 
 .greet-text {
-  color: var(--night-bordeaux);
+  color: var(--cherry-rose);
   font-size: 20px;
   font-weight: 600;
 }
@@ -43,4 +43,14 @@
   align-items: center;
   justify-content: flex-end;
   gap: 8px;
+}
+
+@media (max-width: 500px) {
+  .header {
+    padding: 12px 8px;
+  }
+
+  .left-section {
+    gap: 8px;
+  }
 }

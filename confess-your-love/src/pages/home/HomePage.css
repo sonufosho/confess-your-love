@@ -20,7 +20,7 @@
 }
 
 .home-title {
-  color: var(--night-bordeaux);
+  color: var(--cherry-rose);
   font-size: 40px;
   font-weight: 600;
   margin-bottom: 8px;
@@ -28,7 +28,7 @@
 }
 
 .home-subtitle {
-  color: var(--dark-amaranth);
+  color: var(--rosewood);
   font-size: 20px;
   font-weight: 500;
   margin-bottom: 80px;
@@ -59,4 +59,20 @@
   font-size: 14px;
   font-weight: 400;
   margin-top: 160px;
+}
+
+@media (max-width: 500px) {
+  .home-title {
+    font-size: 28px;
+    margin-top: -60px;
+  }
+
+  .home-subtitle {
+    font-size: 16px;
+    margin-bottom: 60px;
+  }
+
+  .footer-text {
+    margin-top: 40px;
+  }
 }

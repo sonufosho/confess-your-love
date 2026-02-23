@@ -55,7 +55,7 @@ function LoginPage() {
           {isLoggingIn ? 'Logging in...' : 'Log in'}
         </button>
 
-        <p className="login-text">
+        <p className="signup-text">
           Don't have an account?
           <NavLink to="/signup" className="link-primary login-link">
             Create account

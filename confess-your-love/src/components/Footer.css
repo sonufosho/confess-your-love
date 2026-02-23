@@ -15,3 +15,9 @@
 .animated-bee {
   width: 100px;
 }
+
+@media (max-width: 500px) {
+  .footer {
+    bottom: 8px;
+  }
+}
