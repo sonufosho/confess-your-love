@@ -9,6 +9,7 @@ function Header() {
           <NavLink to="/">
             <img className="home-icon" src="/images/home.gif" />
           </NavLink>
+            <label>(Early Access)</label>
         </div>
 
         <div className="right-section">
