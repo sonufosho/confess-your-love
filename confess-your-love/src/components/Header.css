@@ -18,6 +18,19 @@
   width: 60px;
 }
 
+.greet-text {
+  color: var(--night-bordeaux);
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.logout-button {
+  background-color: transparent;
+  color: var(--bubblegum-pink);
+  font-size: 20px;
+  border: none;
+}
+
 .left-section {
   display: flex;
   align-items: center;

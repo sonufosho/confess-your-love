@@ -6,17 +6,10 @@
   min-height: 100vh;
 }
 
-.profile-title {
-  color: var(--night-bordeaux);
-  font-size: 40px;
-  font-weight: 800;
-  margin-bottom: 4px;
-  margin-top: 120px;
-}
-
 .profile-subtitle {
   color: var(--dark-amaranth);
   font-weight: 500;
+  margin-top: 100px;
   margin-bottom: 4px;
 }
 

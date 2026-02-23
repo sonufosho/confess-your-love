@@ -1,16 +1,12 @@
-import useAuthStore from '../../store/useAuthStore';
 import Header from '../../components/Header';
 import './ProfilePage.css';
 
 function ProfilePage() {
-  const { authUser } = useAuthStore();
-
   return (
     <>
       < Header />
 
       <div className="profile-page">
-        <p className="profile-title">Hi, {authUser.fullName}</p>
         <p className="profile-subtitle"> This information will be used to personalize your experience.</p>
         <p className="profile-subtitle-2">Fill the details below</p>
 

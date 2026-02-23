@@ -1,7 +1,11 @@
-import { NavLink } from 'react-router';
+import useAuthStore from '../store/useAuthStore';
+import { NavLink, useLocation } from 'react-router';
 import './Header.css'
 
 function Header() {
+  const location = useLocation();
+  const { authUser } = useAuthStore();
+
   return (
     <>
       <div className="header">
@@ -9,17 +13,28 @@ function Header() {
           <NavLink to="/">
             <img className="home-icon" src="/images/home.gif" />
           </NavLink>
-            <label>(Early Access)</label>
+          <label>(Early Access)</label>
         </div>
 
         <div className="right-section">
-          <NavLink to="/login">
-            <button className="button-secondary">Log in</button>
-          </NavLink>
+          {!authUser && location.pathname === "/" && (
+            <>
+              <NavLink to="/login">
+                <button className="button-secondary">Log in</button>
+              </NavLink>
 
-          <NavLink to="/signup">
-            <button className="button-primary">Get started</button>
-          </NavLink>
+              <NavLink to="/signup">
+                <button className="button-primary">Get started</button>
+              </NavLink>
+            </>
+          )}
+
+          {authUser && (
+            <>
+              <p className="greet-text">Hi, {authUser.fullName}</p>
+              <button className="logout-button"><i className="ri-logout-box-r-line"></i></button>
+            </>
+          )}
         </div>
       </div>
     </>
