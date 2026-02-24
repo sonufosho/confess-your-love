@@ -1,4 +1,5 @@
 import axios from 'axios';
+import toast from 'react-hot-toast';
 import { create } from 'zustand';
 
 const API_URL = import.meta.env.VITE_API_URL;
@@ -29,9 +30,11 @@ const useAuthStore = create((set) => ({
     try {
       const response = await axios.post(`${API_URL}/api/auth/register`, userCredentials, { withCredentials: true });
       set({ authUser: response.data });
+      toast.success('Account created successfully');
 
     } catch (error) {
       console.log('Error in signup:', error);
+      toast.error(error.response.data.message);
 
     } finally {
       set({ isSigningUp: false });
@@ -44,9 +47,11 @@ const useAuthStore = create((set) => ({
     try {
       const response = await axios.post(`${API_URL}/api/auth/login`, userCredentials, { withCredentials: true });
       set({ authUser: response.data });
+      toast.success('Logged in');
 
     } catch (error) {
       console.log('Error in login:', error);
+      toast.error(error.response.data.message);
 
     } finally {
       set({ isLoggingIn: false });
@@ -57,9 +62,11 @@ const useAuthStore = create((set) => ({
     try {
       await axios.post(`${API_URL}/api/auth/logout`, {}, { withCredentials: true });
       set({ authUser: null });
+      toast.success('Logged out');
 
     } catch (error) {
       console.log('Error in logout:', error);
+      toast.error(error.response.data.message);
     }
   }
 }));
