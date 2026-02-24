@@ -38,6 +38,12 @@
   margin-bottom: 20px;
 }
 
+.signup-loading-spinner {
+  width: 28px;
+  margin: -8px;
+  padding: 0 18px;
+}
+
 .login-text {
   color: var(--dim-grey);
 }

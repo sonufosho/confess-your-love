@@ -52,7 +52,10 @@ function LoginPage() {
           onClick={() => login(formData)}
           disabled={isLoggingIn}
         >
-          {isLoggingIn ? 'Logging in...' : 'Log in'}
+          {isLoggingIn
+            ? <img src="loading-spinner.gif" className="login-loading-spinner" />
+            : 'Log in'
+          }
         </button>
 
         <p className="signup-text">

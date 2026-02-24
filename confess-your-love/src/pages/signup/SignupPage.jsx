@@ -75,7 +75,10 @@ function SignupPage() {
           disabled={isSigningUp}
           className="button-primary signup-button"
         >
-          {isSigningUp ? "Signing up..." : "Sign up"}
+          {isSigningUp
+            ? <img src="loading-spinner.gif" className="signup-loading-spinner" />
+            : 'Sign up'
+          }
         </button>
 
         <p className="login-text">
