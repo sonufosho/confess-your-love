@@ -16,18 +16,28 @@ function ProfilePage() {
         </div>
 
         <div className="form-group">
-          <label className="profile-label">Crush name</label>
+          <label className="profile-label">Crush's name</label>
           <input type="text" name="crushName" placeholder="Who's your crush?" required />
         </div>
 
         <div className="form-group">
+          <label className="profile-label">Crush's gender</label>
+          <select name="crush-gender" required>
+            <option value="">Select your crush's gender</option>
+            <option value="Female">Female</option>
+            <option value="Male" disabled>Male</option>
+          </select>
+        </div>
+
+        <div className="form-group">
           <label className="profile-label">Relationship type</label>
-          <select name="be-my" required>
+          <select name="relationship-type" required>
             <option value="">Choose your relationship</option>
+            <option value="Love">Love</option>
             <option value="Girlfriend">Girlfriend</option>
-            <option value="Boyfriend">Boyfriend</option>
+            <option value="Boyfriend" disabled>Boyfriend</option>
             <option value="Wife">Wife</option>
-            <option value="Husband">Husband</option>
+            <option value="Husband" disabled>Husband</option>
             <option value="Valentine">Valentine</option>
           </select>
         </div>
@@ -63,7 +73,7 @@ function ProfilePage() {
           <select name="hobby-3" required>
             <option value="">Select a hobby</option>
             <option value="I would cook for you">I would love to cook with you</option>
-            <option value="I would hold your hands">I would love to hold your hands</option>
+            <option value="I would hold your hand">I would love to hold your hands</option>
             <option value="I would workout with you">I would love to workout with you</option>
             <option value="I would give you flowers">I can give you flowers</option>
             <option value="I would take you to shopping">I can take you to shopping</option>
@@ -72,13 +82,13 @@ function ProfilePage() {
         </div>
 
         <div className="form-group">
-          <label className="profile-label">Add a photo</label>
-          <input type="file" name="photo" accept="image/*" required />
+          <label className="profile-label">Add a photo (currently unavailable)</label>
+          <input type="file" name="photo" accept="image/*" disabled />
         </div>
 
         <div className="form-group">
-          <label className="profile-label">Message</label>
-          <textarea name="message" placeholder="Write something..." rows="4" required />
+          <label className="profile-label">Message (currently unavailable)</label>
+          <textarea name="message" placeholder="Write something..." rows="4" disabled />
         </div>
 
         <button className="button-primary save-button">Save</button>
