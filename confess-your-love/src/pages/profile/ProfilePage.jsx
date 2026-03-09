@@ -72,12 +72,12 @@ function ProfilePage() {
           <label className="profile-label">Hobby 3</label>
           <select name="hobby-3" required>
             <option value="">Select a hobby</option>
-            <option value="I would cook for you">I would love to cook with you</option>
-            <option value="I would hold your hand">I would love to hold your hands</option>
-            <option value="I would workout with you">I would love to workout with you</option>
-            <option value="I would give you flowers">I can give you flowers</option>
-            <option value="I would take you to shopping">I can take you to shopping</option>
-            <option value="I would take you to long drives">I can take you to long drives</option>
+            <option value="I will cook for you">I will cook with you</option>
+            <option value="I will hold your hand">I will hold your hand</option>
+            <option value="I will workout with you">I will workout with you</option>
+            <option value="I will give you flowers">I will give you flowers</option>
+            <option value="I will take you to shopping">I will take you to shopping</option>
+            <option value="I will take you to long drives">I will take you to long drives</option>
           </select>
         </div>
 
