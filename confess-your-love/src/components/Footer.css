@@ -1,23 +1,41 @@
 .footer {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
 
   position: fixed;
-  bottom: 20px;
+  bottom: 0;
   right: 50%;
   transform: translateX(50%);
+  height: 60px;
+}
+
+.footer-group {
+  display: flex;
 }
 
 .animated-flower {
-  width: 100px;
+  width: 80px;
 }
+
 .animated-bee {
-  width: 100px;
+  width: 80px;
+}
+
+.footer-text {
+  color: var(--black-800);
+  font-size: 12px;
+  font-weight: 300;
+  margin-bottom: 60px;
 }
 
 @media (max-width: 500px) {
-  .footer {
-    bottom: 8px;
+  .animated-flower {
+    width: 60px;
+  }
+
+  .animated-bee {
+    width: 60px;
   }
 }

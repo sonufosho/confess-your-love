@@ -8,14 +8,14 @@
 }
 
 .profile-subtitle {
-  color: var(--rosewood);
+  color: var(--black-600);
   font-weight: 500;
   margin-top: 100px;
   margin-bottom: 4px;
 }
 
 .profile-subtitle-2 {
-  color: var(--rosewood);
+  color: var(--black-600);
   font-weight: 500;
   margin-bottom: 20px;
 }
@@ -35,6 +35,6 @@
 }
 
 .save-button {
-  margin-top: 12px;
+  margin-top: 8px;
   margin-bottom: 40px;
 }

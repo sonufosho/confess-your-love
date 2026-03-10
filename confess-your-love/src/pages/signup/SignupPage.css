@@ -8,14 +8,14 @@
 }
 
 .signup-title {
-  color: var(--cherry-rose);
+  color: var(--black-800);
   font-size: 40px;
   font-weight: 600;
   margin-bottom: 4px;
 }
 
 .signup-subtitle {
-  color: var(--rosewood);
+  color: var(--black-600);
   font-weight: 500;
   margin-bottom: 40px;
 }
@@ -25,8 +25,7 @@
   flex-direction: column;
   align-items: flex-start;
   justify-content: center;
-
-  margin-bottom: 8px;
+  margin-bottom: 12px !important;
 }
 
 .signup-label {
@@ -45,23 +44,9 @@
 }
 
 .login-text {
-  color: var(--dim-grey);
+  color: var(--black-600);
 }
 
 .login-link {
   margin-left: 4px;
-}
-
-@media (max-width: 500px) {
-  .signup-title {
-    margin-top: -100px;
-  }
-
-  .signup-subtitle {
-    margin-bottom: 40px;
-  }
-
-  .login-text {
-    margin-top: 20px;
-  }
 }

@@ -12,35 +12,49 @@
 }
 
 :root {
-  --alice-blue: #e3f2fdff;
-  --icy-blue: #bbdefbff;
-  --sky-blue: #90caf9ff;
-  --cool-sky: #64b5f6ff;
-  --cool-sky-2: #42a5f5ff;
-  --dodger-blue: #2196f3ff;
-  --brilliant-azure: #1e88e5ff;
-  --twitter-blue: #1976d2ff;
-  --ocean-deep: #1565c0ff;
-  --cobalt-blue: #0d47a1ff;
+  --white: #ffffff;
+  --black-50: #f2f2f2;
+  --black-100: #e6e6e6;
+  --black-150: #d9d9d9;
+  --black-200: #cccccc;
+  --black-250: #c0c0c0;
+  --black-300: #b3b3b3;
+  --black-350: #a6a6a6;
+  --black-400: #999999;
+  --black-450: #8d8d8d;
+  --black-500: #808080;
+  --black-550: #737373;
+  --black-600: #666666;
+  --black-650: #5a5a5a;
+  --black-700: #4d4d4d;
+  --black-750: #404040;
+  --black-800: #333333;
+  --black-850: #262626;
+  --black-900: #1a1a1a;
+  --black-950: #0d0d0d;
 }
 
 :root {
-  --night-bordeaux: #590d22ff;
-  --dark-amaranth: #800f2fff;
-  --cherry-rose: #a4133cff;
-  --rosewood: #c9184aff;
-  --bubblegum-pink: #ff4d6dff;
-  --bubblegum-pink-2: #ff758fff;
-  --cotton-candy: #ff8fa3ff;
-  --cherry-blossom: #ffb3c1ff;
-  --pastel-pink: #ffccd5ff;
-  --lavender-blush: #fff0f3ff;
+  --blush-hour-100: #fee2e9;
+  --blush-hour-200: #fdc5d3;
+  --blush-hour-300: #fda9be;
+  --blush-hour-400: #fc8ca8;
+  --blush-hour-500: #fb6f92;
+  --blush-hour-600: #c95975;
+  --blush-hour-700: #974358;
+  --blush-hour-800: #642c3a;
+  --blush-hour-900: #32161d;
+}
+
+:root {
+  --blue: #0077b6;
 }
 
 body {
-  font-family: "Roboto", sans-serif;
-  background-color: var(--lavender-blush);
+  font-family: "Inter", sans-serif;
+  background-color: var(--black-50);
   margin: 0;
+  box-sizing: border-box;
 }
 
 p {
@@ -50,26 +64,27 @@ p {
 input,
 select,
 textarea {
-  font-family: "Roboto", sans-serif;
-  color: var(--graphite);
+  font-family: "Inter", sans-serif;
+  color: var(--black-900);
   background-color: var(--white);
   font-size: 14px;
-  padding: 10px 12px;
+  padding: 12px 20px;
   border-radius: 8px;
-  border: 2px solid var(--silver-2);
+  border: 2px solid var(--black-200);
 }
 
 input:focus,
 select:focus,
 textarea:focus {
-  outline-color: var(--cotton-candy);
+  border-color: var(--black-400);
+  outline: none;
   box-shadow: 0 0 0 2px rgba(17, 24, 39, 0.1);
 }
 
 label {
   font-size: 14px;
   font-weight: 500;
-  color: var(--bubblegum-pink-2);
+  color: var(--black-500);
 }
 
 button {
@@ -79,44 +94,41 @@ button {
 }
 
 .button-primary {
-  color: var(--white);
-  background-color: var(--bubblegum-pink);
+  color: rgba(255, 255, 255, 1);
+  background-color: var(--blush-hour-500);
   padding: 8px 16px;
   border: none;
-  border-radius: 50px;
-  box-shadow: 0 2px 5px rgba(220, 220, 220, 0.5);
+  border-radius: 40px;
 }
 
 .button-primary:hover {
-  background-color: var(--bubblegum-pink-2);
-  border: none;
+  background-color: var(--blush-hour-400);
 }
 
 .button-primary:active {
-  background: var(--cotton-candy);
-  box-shadow: none;
+  background: var(--blush-hour-300);
 }
 
 .button-secondary {
-  color: var(--bubblegum-pink);
-  background: var(--white);
+  color: var(--blush-hour-500);
+  background: rgba(255, 255, 255, 1);
   padding: 7px 15px;
-  border: 2px solid var(--bubblegum-pink);
-  border-radius: 50px;
+  border: 2px solid var(--blush-hour-500);
+  border-radius: 40px;
   cursor: pointer;
-  box-shadow: 0 2px 5px rgba(220, 220, 220, 0.2);
 }
 
 .button-secondary:hover {
-  background-color: var(--lavender-blush);
+  background-color: var(--blush-hour-100);
+  color: rgba(255, 255, 255, 1);
 }
 
 .button-secondary:active {
-  background-color: var(--pastel-pink);
+  background-color: var(--blush-hour-200);
 }
 
 .link-primary {
-  color: var(--twitter-blue);
+  color: var(--blue);
   cursor: pointer;
 }
 
@@ -129,7 +141,7 @@ button {
 }
 
 select {
-  color: var(--graphite);
+  color: var(--black-900);
   cursor: pointer;
   box-shadow: 0 1px 3px rgba(200, 200, 200, 0.2);
 }
@@ -140,7 +152,7 @@ textarea {
 
 input[type="file"]::file-selector-button {
   background-color: transparent;
-  color: var(--bubblegum-pink-2);
+  color: var(--black-400);
   border: none;
   cursor: pointer;
 }

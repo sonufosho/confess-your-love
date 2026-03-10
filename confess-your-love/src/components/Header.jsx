@@ -13,18 +13,18 @@ function Header() {
           <NavLink to="/">
             <img className="home-icon" src="/images/home.gif" />
           </NavLink>
-          <label>(Early Access)</label>
+          <label className="label-early-access">Early access</label>
         </div>
 
         <div className="right-section">
           {!authUser && location.pathname === "/" && (
             <>
-              <NavLink to="/login">
-                <button className="button-secondary">Log in</button>
-              </NavLink>
-
               <NavLink to="/signup">
                 <button className="button-primary">Get started</button>
+              </NavLink>
+
+              <NavLink to="/login">
+                <button className="button-secondary">Log in</button>
               </NavLink>
             </>
           )}
