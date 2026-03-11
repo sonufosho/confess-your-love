@@ -8,14 +8,14 @@
 }
 
 .profile-subtitle {
-  color: var(--black-600);
+  color: var(--black-700);
   font-weight: 500;
-  margin-top: 100px;
+  margin-top: 80px;
   margin-bottom: 4px;
 }
 
 .profile-subtitle-2 {
-  color: var(--black-600);
+  color: var(--black-700);
   font-weight: 500;
   margin-bottom: 20px;
 }
